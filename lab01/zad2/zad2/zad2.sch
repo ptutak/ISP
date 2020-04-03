@@ -1,0 +1,137 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_UNO_R3 A?
+U 1 1 5E878C73
+P 4750 4150
+F 0 "A?" H 4750 5331 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 4750 5240 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 4750 4150 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 4750 4150 50  0001 C CNN
+	1    4750 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L local:PC PC?
+U 1 1 5E88DFB1
+P 2300 3550
+F 0 "PC?" H 2333 4215 50  0000 C CNN
+F 1 "PC" H 2333 4124 50  0000 C CNN
+F 2 "" H 2300 3550 50  0001 C CNN
+F 3 "" H 2300 3550 50  0001 C CNN
+	1    2300 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3550 2900 3550
+Wire Wire Line
+	2900 3550 2900 3250
+Wire Wire Line
+	4250 3650 2900 3650
+Wire Wire Line
+	2900 3650 2900 3850
+$Comp
+L Device:LED D?
+U 1 1 5E87A2AD
+P 5550 4600
+F 0 "D?" V 5589 4483 50  0000 R CNN
+F 1 "LED" V 5498 4483 50  0000 R CNN
+F 2 "" H 5550 4600 50  0001 C CNN
+F 3 "~" H 5550 4600 50  0001 C CNN
+	1    5550 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_DPST_x2 SW?
+U 1 1 5E87AFAE
+P 7100 3700
+F 0 "SW?" H 7100 3935 50  0000 C CNN
+F 1 "SW_DPST_x2" H 7100 3844 50  0000 C CNN
+F 2 "" H 7100 3700 50  0001 C CNN
+F 3 "~" H 7100 3700 50  0001 C CNN
+	1    7100 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E87BA0D
+P 7100 4850
+F 0 "R?" H 7170 4896 50  0000 L CNN
+F 1 "10 kOhm" H 7170 4805 50  0000 L CNN
+F 2 "" V 7030 4850 50  0001 C CNN
+F 3 "~" H 7100 4850 50  0001 C CNN
+	1    7100 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4150 5700 4150
+$Comp
+L Device:R_POT RV?
+U 1 1 5E8714BC
+P 5850 4150
+F 0 "RV?" H 5781 4196 50  0000 R CNN
+F 1 "R_POT" H 5781 4105 50  0000 R CNN
+F 2 "" H 5850 4150 50  0001 C CNN
+F 3 "~" H 5850 4150 50  0001 C CNN
+	1    5850 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3150 5850 3150
+Wire Wire Line
+	5850 3150 5850 4000
+Wire Wire Line
+	5850 4300 5850 5250
+Wire Wire Line
+	5850 5250 5550 5250
+Wire Wire Line
+	7100 3150 7100 3500
+Wire Wire Line
+	7100 3900 7100 4350
+Wire Wire Line
+	7100 4350 7100 4700
+Connection ~ 7100 4350
+Wire Wire Line
+	7100 5000 7100 5250
+Wire Wire Line
+	5250 4350 7100 4350
+Wire Wire Line
+	5850 3150 7100 3150
+Connection ~ 5850 3150
+Wire Wire Line
+	5850 5250 7100 5250
+Connection ~ 5850 5250
+$Comp
+L Device:R R?
+U 1 1 5E897C7D
+P 5550 4900
+F 0 "R?" H 5620 4946 50  0000 L CNN
+F 1 "2.2 kOhm" H 5620 4855 50  0000 L CNN
+F 2 "" V 5480 4900 50  0001 C CNN
+F 3 "~" H 5550 4900 50  0001 C CNN
+	1    5550 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5050 5550 5250
+Connection ~ 5550 5250
+Wire Wire Line
+	5550 5250 4850 5250
+Wire Wire Line
+	5250 4250 5550 4250
+Wire Wire Line
+	5550 4250 5550 4450
+$EndSCHEMATC

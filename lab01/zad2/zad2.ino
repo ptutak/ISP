@@ -30,7 +30,8 @@ int checkButton(int buttonPin){
 
 void loop() {
   int sensorValue = analogRead(sensorPin);
-  
+  Serial.println(sensorValue)
+
   if (sensorValue > VOLTAGE_BOUNDARY) {
     digitalWrite(ledPin, HIGH);
   } else {

@@ -4,11 +4,15 @@ int sensorPin = A0;
 int ledPin = 2;
 int buttonPin = 3;
 
+int pwmPin = 9;
+int sensorPwmPin = A2;
+
 void setup() {
   Serial.begin(9600);
   pinMode(ledPin, OUTPUT);
   pinMode(buttonPin, INPUT);
   digitalWrite(ledPin, LOW);
+  analogWrite(pwmPin,200);
 }
 
 int checkButton(int buttonPin){
@@ -28,6 +32,7 @@ int checkButton(int buttonPin){
 }
 
 void loop() {
+  
   int sensorValue = analogRead(sensorPin);
   double voltageValue = (double) sensorValue / 1024.0;
   Serial.println(voltageValue);
@@ -44,5 +49,9 @@ void loop() {
     digitalWrite(ledPin, LOW);
   }
 
+  int pwmSensorValue = analogRead(sensorPwmPin);
+  double pwmSensorVoltage = (double)pwmSensorValue / (double)1024.0;
+  Serial.println(pwmSensorVoltage);
+  
   delay(1);
 }

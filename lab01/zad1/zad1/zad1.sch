@@ -14,31 +14,16 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+5V #PWR?
-U 1 1 5E86F2EF
-P 7450 3800
-F 0 "#PWR?" H 7450 3650 50  0001 C CNN
-F 1 "+5V" H 7465 3973 50  0000 C CNN
-F 2 "" H 7450 3800 50  0001 C CNN
-F 3 "" H 7450 3800 50  0001 C CNN
-	1    7450 3800
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:R_POT RV?
 U 1 1 5E8714BC
 P 6800 4150
 F 0 "RV?" H 6731 4196 50  0000 R CNN
-F 1 "R_POT" H 6731 4105 50  0000 R CNN
+F 1 "10 kOhm" H 6731 4105 50  0000 R CNN
 F 2 "" H 6800 4150 50  0001 C CNN
 F 3 "~" H 6800 4150 50  0001 C CNN
 	1    6800 4150
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	7450 3700 6800 3700
-Wire Wire Line
-	6800 3700 6800 4000
 Wire Wire Line
 	5100 4150 6650 4150
 Wire Wire Line
@@ -75,4 +60,8 @@ Wire Wire Line
 	4100 3650 2900 3650
 Wire Wire Line
 	2900 3650 2900 3850
+Wire Wire Line
+	6800 3150 4800 3150
+Wire Wire Line
+	6800 3150 6800 4000
 $EndSCHEMATC
